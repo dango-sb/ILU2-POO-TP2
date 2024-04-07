@@ -22,6 +22,6 @@ public class ControlPrendreEtal {
 	}
 
 	public boolean verifierIdentite(String nomVendeur) {
-		return village.trouverHabitant(nomVendeur)!=null;
+		return this.controlVerifierIdentite.verifierIdentite(nomVendeur);
 	}
 }

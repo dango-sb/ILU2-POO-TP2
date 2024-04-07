@@ -3,7 +3,6 @@ package frontiere;
 import java.util.Scanner;
 
 import controleur.ControlPrendreEtal;
-import villagegaulois.Village;
 
 public class BoundaryPrendreEtal {
 	private ControlPrendreEtal controlPrendreEtal;
@@ -27,7 +26,7 @@ public class BoundaryPrendreEtal {
 			boolean etalDisponible =  controlPrendreEtal.resteEtals();
 			if (!etalDisponible) {
 				System.out.println("Desolee " + nomVendeur + " je n'ai plus "				
-						+ "d'étal qui ne soit pas deja occupé");
+						+ "d'ï¿½tal qui ne soit pas deja occupï¿½");
 			}
 			else {
 				this.installerVendeur(nomVendeur);
@@ -43,7 +42,7 @@ public class BoundaryPrendreEtal {
 		int nbProduit = Clavier.entrerEntier("Combien souhaitez-vouz en vendre ?");
 		int numeroEtal = controlPrendreEtal.prendreEtal(nomVendeur, produit, nbProduit);
 		if (numeroEtal!=-1) {
-			System.out.println("Le vendeur " + nomVendeur + " s'est installe a l'etal n°" + numeroEtal);
+			System.out.println("Le vendeur " + nomVendeur + " s'est installe a l'etal nï¿½" + numeroEtal);
 		}
 	}
 }
