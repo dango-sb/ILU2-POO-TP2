@@ -27,18 +27,18 @@ public class TestControleursDesCas {
 		ControlAfficherVillage controlAfficherVillage = new ControlAfficherVillage(
 				village);
 
-		// Cas 2 : Emmenager
+//		 Cas 2 : Emmenager
 
-//		System.out.println("Cas 2 : Emmenager");
-//		ControlEmmenager controlEmmenager = new ControlEmmenager(village);
-//		controlEmmenager.ajouterDruide("Panoramix", 10, 5, 7);
-//		controlEmmenager.ajouterGaulois("Asterix", 6);
-//		controlEmmenager.ajouterGaulois("Obelix", 12);
-//		String[] nomsVillageois = controlAfficherVillage.donnerNomsVillageois();
-//		System.out.println("Les villageois sont : ");
-//		for (String villageois : nomsVillageois) {
-//			System.out.println("- " + villageois);
-//		}
+		System.out.println("Cas 2 : Emmenager");
+		ControlEmmenager controlEmmenager = new ControlEmmenager(village);
+		controlEmmenager.ajouterDruide("Panoramix", 10, 5, 7);
+		controlEmmenager.ajouterGaulois("Asterix", 6);
+		controlEmmenager.ajouterGaulois("Obelix", 12);
+		String[] nomsVillageois = controlAfficherVillage.donnerNomsVillageois();
+		System.out.println("Les villageois sont : ");
+		for (String villageois : nomsVillageois) {
+			System.out.println("- " + villageois);
+		}
 		
 //		Sortie Console :
 //		Cas 2 : Emmenager
